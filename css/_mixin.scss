@@ -1,0 +1,15 @@
+@mixin dysplayElementCEnter(){
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+// paquete que contiene un bloque de codigo que se repita  muchas veces//
+@mixin backgraounBorder(){
+    background-color: red;
+    border: 1px solid darkred;
+}
+@mixin colorFonTfamily( $colorText, $font, $size) {
+    color: $colorText;
+    font-family:$font ;
+    font-size: $size;
+} // el $colotext y demas son variables que puedo nombrar como quiera //

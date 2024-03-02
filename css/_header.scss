@@ -1,0 +1,22 @@
+.header{
+    background-color: rgba(255, 192, 203,0.7);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    position: fixed;//se queda fija, se pone encima //
+    width: 100%; //cuando la fijo tengo que darle ancho//
+    //position sticky no rompe con el flujo del html, se quedaria fijo donde lo pongamos y en este caso iria con top:0 y left o//
+
+
+
+
+
+    &_btn{
+        background-color: beige;
+        padding: 5px;
+        width: 150px;
+        border-radius: 10px;
+    }
+
+}

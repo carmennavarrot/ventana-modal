@@ -1,0 +1,11 @@
+.footer{
+    &_chat{
+        width: 50px;
+        position: fixed;
+        bottom: 10px;
+        right: 50px;
+        z-index:100;
+
+
+    }//este boton me persigue donde yo mueva mi pagina pero se mantiene en la misma posicion//
+}

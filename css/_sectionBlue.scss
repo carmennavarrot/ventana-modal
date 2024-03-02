@@ -1,0 +1,62 @@
+.container{
+    padding: 20px;
+    background-color: bisque;
+    height: 120vh;
+    background-image: url(../images/descargar.jpg);
+    @include dysplayElementCEnter();
+
+    &_sectionBlue{
+        background-color: aqua;
+        position: relative;
+
+        &-title{
+            color: $color_text;
+            @include backgraounBorder();
+        }
+
+        &-h3{
+            text-align: center;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: green;
+            line-height: 20px; //da la altura donde va el texto escrito//
+            position: absolute;//se queda en el sitio donde yo digo //
+            right: 0px;
+            top: -10px;
+            z-index: 500;
+            //esto es lo que voy a utilizar para el slack//
+
+
+        }
+
+        & div{
+            background-color:blue;
+            @include colorFonTfamily(white,Arial,18px);
+        }
+
+    }
+    &_sectionYellow{
+        background-color:purple ;
+        @include dysplayElementCEnter();
+        @include colorFonTfamily($color_text, Arial, 25px)
+    }
+}
+
+.ventanaModal{
+    background-color: rgba(128, 128, 128,0.8);
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & div{
+        width: 50%;
+        background-color: white;
+
+    }
+}
